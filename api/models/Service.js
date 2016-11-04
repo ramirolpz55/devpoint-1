@@ -11,7 +11,11 @@ module.exports = {
 
     name : { type: 'string' },
 
-    description : { type: 'string' }
+    description : { type: 'string' },
+
+    userId: {
+      model: 'user'
+    }
   }
 };
 

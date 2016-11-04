@@ -24,7 +24,11 @@ module.exports = {
 
     subject : { type: 'string' },
 
-    message : { type: 'longtext' }
+    message : { type: 'longtext' },
+
+    userId: {
+      model: 'user'
+    }
   }
 };
 

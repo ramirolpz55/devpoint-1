@@ -17,11 +17,35 @@ module.exports = {
 
     password : { type: 'string' },
 
-    username : { type: 'string' },
+    username : {
+      type: 'string' ,
+      unique: true
+    },
 
     headline : { type: 'string' },
 
-    description : { type: 'string' }
+    description : { type: 'string' },
+
+    messages: {
+      collection: 'message',
+      via: 'userId'
+    },
+
+    links: {
+      collection: 'link',
+      via: 'userId'
+    },
+
+    services: {
+      collection: 'service',
+      via: 'userId'
+    },
+
+    skills: {
+      collection: 'skill',
+      via: 'userId'
+    }
+
   }
 };
 
